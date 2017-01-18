@@ -1,6 +1,7 @@
 FROM alpine
+MAINTAINER SIVAKUMAR VUNNAM <sivakumar.vunnam@wdc.com>
 
-RUN apk --update add openjdk7-jre openssh git && \
+RUN apk --update add openjdk7-jre openssh git vim curl wget && \
     rm -rf /var/cache/apk/* 
 
 RUN /usr/bin/java -version

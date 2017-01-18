@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:4
-
-RUN apk --update add openjdk7-jre openssh git && \
+MAINTAINER SIVAKUMAR VUNNAM <sivakumar.vunnam@wdc.com>
+RUN apk --update add openjdk7-jre openssh git vim wget curl && \
     rm -rf /var/cache/apk/* 
 
 RUN addgroup jenkins && \

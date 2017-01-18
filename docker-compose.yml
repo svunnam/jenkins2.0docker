@@ -6,8 +6,8 @@ services:
      - "8080:8080"
      - "50000:50000"
     links:
-    - node_ci
-  node_ci:
-   build: ./slave_node_alpine
+    - slave_node
+  slave_node:
+   build: ./jenkins_slave
    ports:
     - 22
